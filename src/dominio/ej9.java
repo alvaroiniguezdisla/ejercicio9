@@ -20,17 +20,12 @@ public class ej9 {
     }
 
     public static int fac(int n) {
-        try {
-            if (n < 0) {
-                throw new IOException("El número debe ser mayor que 0");
-            } else if (n == 0) {
-                return 1;
-            } else {
-                return n * fac(n - 1);
-            }
-        } catch (Exception e) {
-            System.out.println("Error: " + e);
-            return 0;
+        if (n < 0) {
+            throw new IllegalArgumentException("El número debe ser mayor o igual a 0");
+        } else if (n == 0) {
+            return 1;
+        } else {
+            return n * fac(n - 1);
         }
     }
 
