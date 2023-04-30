@@ -12,6 +12,6 @@ public class Principal {
         int[] lista = { 1, 2, 3, 4, 5 };
         System.out.println(ej9.media(lista, lista.length - 1));
         System.out.println(ej9.sumapares(n));
-        ArrayList<Integer> lista2 = new ArrayList<Integer>();
+
     }
 }
